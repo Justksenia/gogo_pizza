@@ -1,0 +1,88 @@
+@import "../../../scss/_var.scss";
+
+article {
+
+    padding-top: 32px;
+    width:24%;
+    // margin-right: 1%;
+    h4{
+        font-size:20px;
+        font-weight: 800;
+    }
+    img{
+        width:80%;
+       
+    }
+    .img__block{
+        position:relative;
+        top:0;
+       
+    }
+  .img__block:hover{
+    cursor:pointer;
+    top:-10px;
+    transition-duration: 0.3s; 
+    transition-timing-function: linear;
+    
+  
+    
+  }
+    .filterWrapper {
+        max-width:280px;
+        background-color: $light-grey;
+        border-radius: 10px;
+        padding: 7px 5.3px;
+        margin:21px auto;
+    }
+    .filterType {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        padding-bottom: 5px;
+        transition: color 150ms ease 0s;
+        li{
+        width: 48%;
+        height:32px;
+        box-shadow: 0 2 4 rgba(0, 0, 0, 0.04);
+        margin-left: 5px;
+        padding-top: 5px;
+        transition: linear 15s ease 0s;
+    }
+}
+
+    .diametrPizza {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        padding-bottom: 5px;
+        // display: flex;
+        // justify-content: space-around;
+        // flex-basis: 33%;
+     li{
+        
+        height: 32px;
+        width:80px;
+        margin-right: 3.3px;
+    }
+}
+    .price {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        span {
+        font-size: 22px;
+        font-weight: 700;
+    }
+        button {
+            height: 40px;
+            width:155px;
+            border-radius: 30px;
+            border:1px solid $orange;
+            background-color: white;
+            font-size: 16px;
+            font-weight: 700;
+            color:$orange;
+        }
+    }
+ 
+}   

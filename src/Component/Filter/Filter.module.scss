@@ -1,0 +1,33 @@
+@import "../../scss/_var.scss";
+
+nav{
+    // padding: 41px 0px 0px 67px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav__list {
+    display: flex;
+    justify-content: space-between;
+  
+    ul{
+       display: flex;
+      justify-content: space-between;
+       cursor: pointer;
+    }
+    li{
+     
+        padding: 13px 30px;
+        margin-right: 10px;
+        border-radius: 30px;
+        background-color: $grey;
+        border:1px solid $grey;
+    }
+    .active {
+        background-color: $black;
+        border:1px solid $black;
+        color: white;
+    }
+
+}

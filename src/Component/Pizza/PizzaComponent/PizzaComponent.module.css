@@ -1,0 +1,104 @@
+article {
+  padding-top: 32px;
+  width: 24%;
+}
+
+article h4 {
+  font-size: 20px;
+  font-weight: 800;
+}
+
+article img {
+  width: 80%;
+}
+
+article .img__block {
+  position: relative;
+  top: 0;
+}
+
+article .img__block:hover {
+  cursor: pointer;
+  top: -10px;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+  -webkit-transition-timing-function: linear;
+          transition-timing-function: linear;
+}
+
+article .filterWrapper {
+  max-width: 280px;
+  background-color: #f3f3f3;
+  border-radius: 10px;
+  padding: 7px 5.3px;
+  margin: 21px auto;
+}
+
+article .filterType {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 5px;
+  -webkit-transition: color 150ms ease 0s;
+  transition: color 150ms ease 0s;
+}
+
+article .filterType li {
+  width: 48%;
+  height: 32px;
+  -webkit-box-shadow: 0 2 4 rgba(0, 0, 0, 0.04);
+          box-shadow: 0 2 4 rgba(0, 0, 0, 0.04);
+  margin-left: 5px;
+  padding-top: 5px;
+  -webkit-transition: linear 15s ease 0s;
+  transition: linear 15s ease 0s;
+}
+
+article .diametrPizza {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 5px;
+}
+
+article .diametrPizza li {
+  height: 32px;
+  width: 80px;
+  margin-right: 3.3px;
+}
+
+article .price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+article .price span {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+article .price button {
+  height: 40px;
+  width: 155px;
+  border-radius: 30px;
+  border: 1px solid #fe5f1e;
+  background-color: white;
+  font-size: 16px;
+  font-weight: 700;
+  color: #fe5f1e;
+}
+/*# sourceMappingURL=PizzaComponent.module.css.map */

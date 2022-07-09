@@ -1,0 +1,45 @@
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.nav__list ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  cursor: pointer;
+}
+
+.nav__list li {
+  padding: 13px 30px;
+  margin-right: 10px;
+  border-radius: 30px;
+  background-color: #f9f9f9;
+  border: 1px solid #f9f9f9;
+}
+
+.nav__list .active {
+  background-color: #232323;
+  border: 1px solid #232323;
+  color: white;
+}
+/*# sourceMappingURL=Filter.module.css.map */

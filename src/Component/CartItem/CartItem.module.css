@@ -1,0 +1,28 @@
+@import url(../../scss/_var.scss);
+
+.trash__component{
+    padding:30px 0 60px;;
+    display: flex;
+    justify-content: space-between;
+}
+.trash__component img {
+    width:80px;
+    height: 80px;
+}
+
+.button__count button {
+        border-radius: 50%;
+        width:32px;
+        height: 32px;
+        font-size: 20px;
+        background-color: white;
+    }
+    .button__section{
+        border:2px solid orangered;
+        color: orangered
+    }
+    .button__clear {
+        border:2px solid grey;
+        color:grey;
+    }
+    

@@ -1,0 +1,54 @@
+.container{
+    max-width: 820px;
+    margin:0 auto;
+}
+.line {
+   background-color: grey;
+    height: 1px;
+}
+.trash {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 176px;
+}
+h4{
+    font-weight: 700;
+    font-size: 32px;
+}
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 0 30px;
+}
+.trash i{
+    margin-right: 18px;
+}
+
+    span{
+        margin: 0 12px;
+        font-weight: 700;
+    } 
+.price {
+    font-weight: 700;
+}
+.totalOrders {
+    display: flex;
+    justify-content: space-between;
+}
+.cartEmpty { 
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+        &_image img{
+        max-width: 350px;
+        margin-left: 50px;
+
+    }
+    button {
+        max-width: 210px;
+        margin: 0 auto;
+      
+    }
+}
