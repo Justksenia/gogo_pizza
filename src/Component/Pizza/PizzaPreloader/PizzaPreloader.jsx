@@ -1,9 +1,9 @@
 import React from "react"
 import ContentLoader from "react-content-loader"
-import style from "../Pizza.module.scss";
+import style from "../PizzaComponent/PizzaComponent.module.scss";
 
 const PizzaPreloader = (props) => (
-  <div className={style.app__pizza_section}>
+  <div className="app__pizza_section">
   <ContentLoader 
     speed={3}
     width={267}

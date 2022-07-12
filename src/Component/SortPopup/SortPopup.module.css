@@ -1,3 +1,30 @@
 
-/*# sourceMappingURL=SortPopup.module.css.map */
+.sortPopup {
+    position:absolute; 
+    z-index: 10;
+    right: 10px;;
+    margin-top:15px;
+    background:#ffffff;
+    -webkit-box-shadow:0px 5px 15px rgba(0,0,0,0.09);
+    box-shadow:0px 5px 15px rgba(0,0,0,0.09);
+    border-radius:10px;
+    overflow:hidden;
+    width:160px
+}
 
+.sortPopup ul li {
+    padding:12px 20px;
+    cursor:pointer
+}
+
+.sortPopup ul li:hover {
+    background:rgba(254,95,30,0.05)
+}
+
+.appFilter {
+    position:relative;
+}
+.appFilter span {
+    font-weight: 700;
+    margin: 0 10px;
+}

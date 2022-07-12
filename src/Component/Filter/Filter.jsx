@@ -1,14 +1,11 @@
 import style from "./Filter.module.scss";
-import { useSelector } from "react-redux";
-
-
 
 const Filter=({items, onClickItem, category})=>{
-
- 
     return (
+        <div>
         <nav>
-            <ul className={style.nav__list}>
+           
+            <ul className={style.navList}>
                 <li className={category===null?style.active:null} 
                 onClick={()=>onClickItem(null)}>Все</li>
                 {items.map((item,index)=>{
@@ -18,8 +15,10 @@ const Filter=({items, onClickItem, category})=>{
                     >{item}</li>)
                 })}
             </ul>
+            
            
         </nav>
+        </div>
     )
 }
 export default Filter

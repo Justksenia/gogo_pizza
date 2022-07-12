@@ -1,5 +1,6 @@
 
-import style from "./CartItem.module.css"
+import style from "./CartItem.module.css";
+import { FaTimes, FaMinus, FaPlus } from "react-icons/fa";
 
 const CartItem=({id,name,price, type, size, image, count, onRemoveItem, onPlusItem, onMinusItem})=>{
    
@@ -13,13 +14,13 @@ const CartItem=({id,name,price, type, size, image, count, onRemoveItem, onPlusIt
                     <p>{type} тесто, {size} см </p>
                 </div>
                 <div className={style.button__count}>
-                    <button className={style.button__section} onClick={()=>onMinusItem(id)}>-</button>
+                    <button className={style.button__section} onClick={()=>onMinusItem(id)}><FaMinus/></button>
                     <span>{count}</span>
-                    <button className={style.button__section} onClick={()=>onPlusItem(id)}>+</button>
+                    <button className={style.button__section} onClick={()=>onPlusItem(id)}><FaPlus/></button>
                 </div>
                 <div className={style.price}>{price}p</div>
                 <div className={style.button__count}>
-                    <button className={style.button__clear} onClick={()=>onRemoveItem(id)}>x</button>
+                    <button className={style.button__clear} onClick={()=>onRemoveItem(id)}><FaTimes/></button>
                 </div>
             </div>
               

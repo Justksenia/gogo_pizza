@@ -1,0 +1,136 @@
+@import "var.scss";
+@import "font.scss";
+
+
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Proxima Nova', Roboto, system-ui, Tahoma, sans-serif;
+}
+li {
+    list-style: none;
+}
+a,
+span,
+p,
+b,
+h1 ,
+h2,
+h3,
+h4,
+h5 {
+  color: $black;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: 800;
+    text-align: left;
+  }
+
+h2 {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 30px;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+    background-color: $background;
+    padding: 20px 20px;
+}
+.wrapper {
+    width: calc(100vw - 100px);
+  height: 100%;
+  background-color: #fff;
+  margin: 0 auto;
+  border-radius: 10px;
+  max-width: 1400px;
+  @media (max-width: 768px) {
+    width: calc(100% - 40px);
+  }
+  }
+
+  .content {
+    padding: 40px 0;
+    max-width: 85%;
+    margin:0 auto;
+  }
+  header {
+    border-bottom: 1px solid $gray-line;
+     padding: 40px 0;
+     max-width: 85%;
+     margin:0 auto;
+     height: 137px;
+     border-bottom: 1px solid $gray-line;
+     // padding: 30px 0px 0 77px;
+     display:flex;
+     align-items: center;
+     justify-content: space-between;
+     @media (max-width: 768px) {
+        flex-direction: column;
+        padding: 20px 0;
+        h1{
+            font-size:14px;
+        }
+        p{ font-size:12px}
+   
+    }
+ }
+ 
+ button.button__header{
+    width: 150px;
+    height: 50px;
+    background-color: $orange;
+    border-radius: 30px;
+    color:white;
+    border: 1px solid $orange;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @media (max-width: 768px) {
+      margin-top:10px;
+      width:130px;
+      height: 40px;
+      span {font-size: 12px;}
+      
+      
+   
+    }
+ }
+ .appNav{
+    display: flex;
+      align-items: center;
+       justify-content: space-between;
+    @media (max-width: 880px) {
+      flex-direction: column;
+     
+    }
+    @media (max-width: 480px) {
+    //   overflow: auto;
+    }
+}
+
+ul li.active {
+  font-weight:bold;
+  color:#fe5f1e
+}
+
+span.active {
+  font-weight:bold;
+  color: $orange;
+  border-bottom: 1px dashed $orange;
+  cursor: pointer;
+}
+
+.app__pizza_section{
+  display:flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  
+ 
+}

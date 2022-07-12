@@ -24,7 +24,7 @@ const Home=()=>{
     const {category, sortBy}=useSelector(select.filterSelector)
     const {pizzasItems, isLoading}=useSelector(select.pizzasSelector)
     const cartItems=useSelector(select.cartSelector)
-console.log(cartItems)
+
     
     React.useEffect(()=>{
         dispatch(fetchPizzas(sortBy, category))
@@ -43,7 +43,7 @@ console.log(cartItems)
    
     return (
         <>
-        <div className='app__nav'>
+        <div className='appNav'>
         <Filter items={pizzasCategory} onClickItem={onSelectCategory} category={category}  />
         <SortPopup items={pizzasSort} onClickItem={onSelectSort} sortBy={sortBy.type}/>
       

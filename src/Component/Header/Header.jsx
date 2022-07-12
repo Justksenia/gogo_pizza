@@ -1,30 +1,27 @@
-import style from "./Header.module.scss"
+import style from "./Header.module.css"
 import img from "../../common/img/cart.svg"
 import logo from "../../common/img/image 1.svg"
 import { useSelector } from "react-redux"
-import store from "../../redux/store"
 import { Link } from "react-router-dom"
+import * as selector from "../../redux/selectors/selectors"
 
 const Header=()=>{
-    const {totalCount, totalPrice}=useSelector(({cartReducer})=>cartReducer)
-   
-    
-    return (
+    const {totalCount, totalPrice}=useSelector(selector.cartSelector)
+       return (
         <header>
             <div className={style.logoHeader}>
                 <img src={logo} alt="logo-pizza"/>
                 <Link to="/">
-                <div className={style.text__header}>
+                <div className={style.textHeader}>
                     <h1>GOGO PIZZA</h1>
-                    <h2>Сеть пиццерий №0 в России</h2>
+                    <p>Сеть пиццерий №0 в России</p>
                 </div>
                 </Link>
             </div>
             <div className={style.cart}>
                 <Link to="/cart">
-                    <button>
+                    <button className="button__header">
                     <span>{totalPrice} R</span>
-                    <span>|</span>
                     <img src={img} alt="trash"/>
                     <span>{totalCount}</span>
                     </button>

@@ -1,16 +1,11 @@
 .container {
   text-align: center;
-  max-width:85%;
-  margin: 0 auto;
+  
   font-size: 22px;
 
 }
 
-.app__nav{
-  display:flex;
-  justify-content: space-between;
-  align-items: center;
-}
+
 .disabled {
   pointer-events: none;
   color:white;
@@ -18,17 +13,11 @@
 .active{
   background-color: white;
 }
-a{
-  text-decoration:none;
-}
 
-.app__pizza_section{
+
+/* .app__pizza_section{
   display:flex;
-
-
-
-
   flex-wrap: wrap;
   justify-content: space-between;
  
-}
+} */

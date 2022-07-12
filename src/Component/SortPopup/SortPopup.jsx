@@ -1,6 +1,7 @@
+
 import { useState, useRef, useEffect } from "react"
 import {FiTriangle} from "react-icons/fi";
-import { useSelector } from "react-redux";
+import style from "./SortPopup.module.css"
 
 
 const SortPopup=({items, onClickItem, sortBy})=>{
@@ -25,15 +26,17 @@ const SortPopup=({items, onClickItem, sortBy})=>{
             setVisiblePopup(false)
         }
     }
+    useEffect(() => {
+        document.body.addEventListener('click', handleClick);
+      }, []);
 
     return(
-        <div className="app__filter" ref={sortRef}>
+        <div className={style.appFilter} ref={sortRef}>
        
-        <FiTriangle style={{color:"orange", display:"inline-block", verticalAlign:"text-bottom"}}/>
         <span>Сортировка по: </span>
         <span onClick={togglePopup} className="active">{activeLabel}</span>
         {visiblePopup&& 
-        <div className="sort__popup">
+        <div className={style.sortPopup}>
             <ul>
                {items.map((item,index)=>(
              
