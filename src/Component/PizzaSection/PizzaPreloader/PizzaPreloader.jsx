@@ -3,7 +3,7 @@ import ContentLoader from "react-content-loader"
 import style from "../PizzaComponent/PizzaComponent.module.scss";
 
 const PizzaPreloader = (props) => (
-  <div className="app__pizza_section">
+  <div className={style.pizzaSection}>
   <ContentLoader 
     speed={3}
     width={267}

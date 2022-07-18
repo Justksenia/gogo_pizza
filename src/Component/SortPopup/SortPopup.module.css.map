@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AACA,AAAA,OAAO,CAAA;EACH,KAAK,EAAC,MACV;CAAC",
-    "sources": [
-        "SortPopup.module.scss"
-    ],
-    "names": [],
-    "file": "SortPopup.module.css"
-}

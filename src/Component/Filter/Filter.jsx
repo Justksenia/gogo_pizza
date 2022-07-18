@@ -1,3 +1,4 @@
+import React from "react";
 import style from "./Filter.module.scss";
 
 const Filter=({items, onClickItem, category})=>{
@@ -5,7 +6,7 @@ const Filter=({items, onClickItem, category})=>{
         <div>
         <nav>
            
-            <ul className={style.navList}>
+            <ul className={style.filter}>
                 <li className={category===null?style.active:null} 
                 onClick={()=>onClickItem(null)}>Все</li>
                 {items.map((item,index)=>{
@@ -16,7 +17,6 @@ const Filter=({items, onClickItem, category})=>{
                 })}
             </ul>
             
-           
         </nav>
         </div>
     )

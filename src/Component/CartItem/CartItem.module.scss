@@ -1,0 +1,91 @@
+@import "../../scss/var";
+
+.cart__item {
+
+    font-size: 20px;
+    padding:30px 0 60px;;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    button {
+        opacity: 0.7;
+        &:hover {
+            opacity:1;
+        }
+    }
+    @media (max-width: 720px) {
+        max-width: 80vw;
+        font-size: 10px; 
+      }
+    
+
+}
+.description {
+    display: flex;
+    flex-basis:50%;
+    align-items: center;
+    img {
+        width:80px;
+        height: 80px;
+        margin-right: 20px;
+    }
+}
+
+.button__count {
+    .button__section {
+        color: $orange;
+    }
+    .button__clear {
+        color: $black;
+    }
+    button {
+        width:32px;
+        height: 32px;
+        background-color: white;
+    }
+    span {
+        margin: 0 8px;
+    }
+
+}
+.cartEmpty { 
+    text-align: center;
+      p {
+            margin: 20px 0;
+            font-size:18px;
+
+        }
+        button {
+            width: 210px;
+            height: 50px;
+            background-color: $orange;
+            font-size: 16px;
+            border: none;
+            border-radius: 30px;
+            color: $white;
+            &:hover {
+                background-color: $white;
+                color:$orange;
+                border: 2px solid $orange;
+            }
+    
+        }
+        @media (max-width: 720px) {
+          p {
+            font-size: 10px;
+          }
+          }
+      }
+    .emptyImage {
+        img{
+            max-width: 350px;
+            margin-left: 150px;
+        }
+        @media (max-width: 720px) {
+            img {
+                margin-left: 50px;
+            }
+            }
+        
+    }
+ 

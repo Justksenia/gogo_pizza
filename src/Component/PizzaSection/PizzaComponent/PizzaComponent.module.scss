@@ -1,0 +1,112 @@
+@import "../../../scss/_var.scss";
+
+.pizzaSection{
+    padding-top: 32px;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 50px;
+    @media (max-width: 768px) {
+        display: flex;
+        margin-bottom: 20px;
+    }
+
+ .image {
+    @media (max-width: 768px) {
+        width:50%;
+     }
+ }   
+    img{
+        width:70%;
+        @media (max-width: 768px) {
+           width:60%;
+        }
+    }
+ 
+    .pizzaTitle {
+        h3{
+            font-size:20px;
+            font-weight: 800;
+        }
+        @media (max-width: 768px) {
+            display: flex;
+            flex-direction: column;
+            width: 200px;
+        }
+    }
+  
+  .img__block:hover{
+    top:-10px;
+    transition-duration: 0.3s; 
+    transition-timing-function: linear;
+  }
+    .filterWrapper {
+        display: flex;
+        flex-direction: column;
+        max-width:280px;
+        background-color: $light-grey;
+        border-radius: 10px;
+        padding: 6px;
+        margin:21px auto;
+        @media (max-width: 768px) {
+            width:160px;
+           }
+    }
+    .filterType {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        padding-bottom: 5px;
+
+        li{
+        flex-basis: 50%;
+        width: 48%;
+        height:32px;
+        box-shadow: 0 2 4 rgba(0, 0, 0, 0.04);
+        margin-left: 5px;
+        padding-top: 5px;
+    }
+}
+    .diameterType {
+        cursor: pointer;
+        display: flex;
+        flex:1;
+        align-items: center;
+        padding-bottom: 5px;
+        justify-content: space-between;
+        
+     li{
+        flex-basis: 32%;
+        height: 32px;
+        margin-left: 5px;
+        padding-top: 5px;
+        margin-right: 3.3px;
+    }
+}
+     
+}   
+
+.price {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    span {
+    font-size: 22px;
+    font-weight: 700;
+}
+    button {
+        height: 40px;
+        width:155px;
+        background-color: $white;
+       color:$orange;
+       border:2px solid $orange;
+        &:hover {
+            background-color: $orange;
+            color:$white;
+        }
+        &:active {
+            background-color: $white;
+            color:$orange;
+        }
+    }
+}
+
