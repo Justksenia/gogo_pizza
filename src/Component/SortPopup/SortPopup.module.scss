@@ -18,9 +18,9 @@ b {
 .sortPopup {
     position:absolute; 
     z-index: 10;
-    right: 10px;;
+    right: 10px;
     margin-top:15px;
-    background: white;
+    background: $white;
     -webkit-box-shadow:0px 5px 15px rgba(0,0,0,0.09);
     box-shadow:0px 5px 15px rgba(0,0,0,0.09);
     border-radius:10px;
