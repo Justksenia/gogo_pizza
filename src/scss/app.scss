@@ -1,21 +1,19 @@
 @import "var.scss";
 @import "font.scss";
 
-
-*{
-    margin: 0;
-    padding:0;
-    box-sizing: border-box;
-    font-family: 'Proxima Nova', Roboto, system-ui, Tahoma, sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Proxima Nova", Roboto, system-ui, Tahoma, sans-serif;
 }
 li {
-    list-style: none;
+  list-style: none;
 }
 a,
-
 p,
 b,
-h1 ,
+h1,
 h2,
 h3,
 h4,
@@ -24,10 +22,10 @@ h5 {
 }
 
 h1 {
-    font-size: 24px;
-    font-weight: 800;
-    text-align: left;
-  }
+  font-size: 24px;
+  font-weight: 800;
+  text-align: left;
+}
 
 h2 {
   font-weight: 600;
@@ -35,11 +33,9 @@ h2 {
   line-height: 30px;
 }
 h4 {
-  
-    font-weight: 700;
-    font-size: 32px;
-    margin-left:18px;
-
+  font-weight: 700;
+  font-size: 32px;
+  margin-left: 18px;
 }
 a {
   text-decoration: none;
@@ -49,12 +45,12 @@ a {
 }
 
 body {
-    background-color: $background;
-    padding: 20px 20px;
-    @media (max-width: 768px) {
-      padding: 5px 0;
-      background-color: $white;
-    }
+  background-color: $background;
+  padding: 20px 20px;
+  @media (max-width: 768px) {
+    padding: 5px 0;
+    background-color: $white;
+  }
 }
 .wrapper {
   width: 100vw;
@@ -64,56 +60,51 @@ body {
   border-radius: 10px;
   max-width: 1400px;
   @media (max-width: 768px) {
- 
     font-size: 10px;
   }
-  }
-
-  .content {
-    max-width: 85%;
-    margin: 0 auto;
-    padding: 40px 0;
-    @media (max-width: 768px) {
-      padding:20px 0;
-      max-width: 100%;
-    }
-  }
-
-  .content__navigation{
-      display: flex;
-    align-items: center;
-    justify-content: space-between;
-    @media (max-width: 880px) {
-      flex-direction: column;
-     
-    }
-    
 }
-.content__section{
-  display:flex;
-  flex-basis: 25%;
+
+.content {
+  max-width: 85%;
+  margin: 0 auto;
+  padding: 40px 0;
+  @media (max-width: 768px) {
+    padding: 20px 0;
+    max-width: 100%;
+  }
+}
+
+.content__navigation {
+  display: flex;
+  align-items: center;
   justify-content: space-between;
+  @media (max-width: 880px) {
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+}
+.content__section {
+  display: flex;
+  flex-basis: 23%;
   flex-wrap: wrap;
   margin-top: 50px;
-
- 
 }
 
 li.disabled {
   pointer-events: none;
   opacity: 0.4;
 }
-li.active{
-   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.04);
+li.active {
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.04);
   border-radius: 5px;
   cursor: auto;
-  background-color: white;
+  background-color: $white;
 }
 
 button {
   border-radius: 30px;
-  border:none;
+  border: none;
   font-weight: 700;
   font-size: 16px;
-  cursor:pointer;
+  cursor: pointer;
 }

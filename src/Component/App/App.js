@@ -1,10 +1,10 @@
 import { Route, Routes } from "react-router-dom"
 
-import Header from "./Component/Header/Header"
-import Home from "./page/Home"
-import Cart from "./page/Cart"
+import Header from "../Header/Header"
+import Home from "../../page/Home"
+import Cart from "../../page/Cart"
 
-import "./scss/app.scss"
+import "../../scss/app.scss"
 
 function App() {
   return (

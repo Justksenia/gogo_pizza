@@ -2,11 +2,7 @@ import { useSelector } from "react-redux"
 import * as selector from "../../redux/selectors/selectors"
 import { Link } from "react-router-dom"
 
-import img from "../../common/img/cart.svg"
-import logo from "../../common/img/image 1.svg"
 import style from "./Header.module.scss"
-
-
 
 const Header=()=>{
 
@@ -16,7 +12,7 @@ const Header=()=>{
         <header>
             <div className={style.wrapper__header}>
             <div className={style.wrapper__logo}>
-                <img src={logo} alt="logo-pizza"/>
+                <img src="img/pizza_logo.svg" alt="logo-pizza"/>
                 <Link to="/">
                 <div className={style.textHeader}>
                     <h1>GOGO PIZZA</h1>
@@ -28,7 +24,7 @@ const Header=()=>{
                 <Link to="/cart">
                     <button>
                     <span>{totalPrice} &#8381;</span>
-                    <img src={img} alt="trash"/>
+                    <img src="/img/cart.svg" alt="trash"/>
                     <span>{totalCount}</span>
                     </button>
                 </Link>
