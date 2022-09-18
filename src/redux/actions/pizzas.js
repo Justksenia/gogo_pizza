@@ -9,7 +9,7 @@ export const setLoading=(value)=>({
 
 export const fetchPizzas=(sortBy, category)=>(dispatch)=>{
     dispatch(setLoading(false));
-    fetch(`/pizzas?${category!==null?`category=${category}`:
-    ""}&_sort=${sortBy.type}&_order=${sortBy.order}`)
+    fetch(`https://6318c47f6b4c78d91b2e8e5f.mockapi.io/pizzas${category!==null?`?category=${category}`:
+    ""}?sortBy=${sortBy.type}&order=${sortBy.order}`)
     .then(resp=>resp.json()).then(json=>dispatch(setPizzas((json))))
 }
