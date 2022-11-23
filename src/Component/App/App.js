@@ -4,7 +4,7 @@ import Header from "../Header/Header"
 import Home from "../../page/Home"
 import Cart from "../../page/Cart"
 
-import "../../scss/app.scss"
+import "./main.scss"
 
 function App() {
   return (

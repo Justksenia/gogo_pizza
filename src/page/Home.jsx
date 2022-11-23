@@ -47,7 +47,7 @@ const Home = () => {
   return (
     <>
       <nav>
-        <div className="content__navigation">
+        <div className="flex justify-between items-center">
           <Filter
             items={pizzasCategory}
             onClickItem={onSelectCategory}
@@ -61,7 +61,7 @@ const Home = () => {
         </div>
       </nav>
       <main>
-        <div className="content__section">
+        <div className="flex flex-wrap">
           {isLoading
             ? pizzasItems.map((obj) => (
                 <PizzaComponent

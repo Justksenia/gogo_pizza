@@ -14,18 +14,18 @@ const Header=()=>{
             <div className={style.wrapper__logo}>
                 <img src="img/pizza_logo.svg" alt="logo-pizza"/>
                 <Link to="/">
-                <div className={style.textHeader}>
+                <div className="ml-20">
                     <h1>GOGO PIZZA</h1>
-                    <p>Сеть пиццерий №0 в России</p>
+                    <p className="text-header-grey">Сеть пиццерий №0 в России</p>
                 </div>
                 </Link>
             </div>
-            <div className={style.buttonCart}>
+            <div >
                 <Link to="/cart">
-                    <button>
-                    <span>{totalPrice} &#8381;</span>
+                    <button className='btn btn__orange w-150 h-50 flex items-center justify-center'>
+                    <span className='text-white m-12' >{totalPrice} &#8381;</span>
                     <img src="/img/cart.svg" alt="trash"/>
-                    <span>{totalCount}</span>
+                    <span className='text-white m-12' >{totalCount}</span>
                     </button>
                 </Link>
             </div>

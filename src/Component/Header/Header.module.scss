@@ -1,57 +1,44 @@
-@import "../../scss/var";
 
-  .wrapper__header {
-    border-bottom: 1px solid $gray-line;
-     padding: 40px 0;
-     max-width: 85%;
-     margin:0 auto;
-     height: 137px;
-    display:flex;
-     align-items: center;
-     justify-content: space-between;
-     @media (max-width: 768px) {
-        flex-direction: column;
-        padding: 20px 0;
-        h1{
-            font-size:14px;
-        }
-        p{ font-size:12px}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.wrapper__header{
+    @apply border-b-2 border-lg-grey border-solid py-40 mx-auto w-85 flex items-center justify-between
+}
+.wrapper__logo {
+    @apply flex justify-between  max-w-sm
+}
+
+//   .wrapper__header {
+//  
+//  
+//    
+//     
+//      @media (max-width: 768px) {
+//         flex-direction: column;
+//         padding: 20px 0;
+//         h1{
+//             font-size:14px;
+//         }
+//         p{ font-size:12px}
    
-    }
-    .wrapper__logo{
-        display: flex;
-        max-width: 316px;
-        justify-content: space-between;
-    }
-    .textHeader {
-        margin-left: 20px;
-        p {
-            color:#7B7B7B
-        }
-    }
-    .buttonCart{
-       
-        span {
-            color: $white;
-            margin: 0 12px;
-    }
-    button {
-        width: 150px;
-        height: 50px;
-        background-color: $orange;
-        color:$white;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        @media (max-width: 768px) {
-          margin-top:10px;
-          width:130px;
-          height: 40px;
-          span {font-size: 12px;
-        }
-        }
-     }
+//     }
+//  
+  
+//     .buttonCart{
 
- }
+//     button {
+  
+//            @media (max-width: 768px) {
+//           margin-top:10px;
+//           width:130px;
+//           height: 40px;
+//           span {font-size: 12px;
+//         }
+//         }
+//      }
 
-  }
+//  }
+
+//   }

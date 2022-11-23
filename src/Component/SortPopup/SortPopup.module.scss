@@ -1,44 +1,43 @@
-@import "../../scss/var";
-
-.sort {
-    position:relative;
-    span {
-        font-weight:bold;
-        color: $orange;
-        border-bottom: 1px dashed $orange;
-        cursor: pointer;
-    }
-}
-
-b {
-    margin-right:8px;
-}
-
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 .sortPopup {
-    position:absolute; 
-    z-index: 10;
-    right: 10px;
-    margin-top:15px;
-    background: $white;
-    -webkit-box-shadow:0px 5px 15px rgba(0,0,0,0.09);
-    box-shadow:0px 5px 15px rgba(0,0,0,0.09);
-    border-radius:10px;
-    overflow:hidden;
-    width:160px;
-    li {
-        padding:12px 20px;
-        cursor:pointer;
-        &.active {
-            font-weight:bold;
-            color:#fe5f1e;
-        }
-         &:hover {
-                background:rgba(254,95,30,0.05)
-            }
+    @apply mt-15 absolute z-10 right-10 bg-white rounded-10 shadow-xl w-160 overflow-hidden
+}
+.list li {
+    @apply py-12 px-20 cursor-pointer  hover:bg-orange
+}
+.active {
+    @apply font-bold text-orange
+}
+
+
+
+// .sortPopup {
+//    
+//   
+//    
+//   
+
+//     -webkit-box-shadow:0px 5px 15px rgba(0,0,0,0.09);
+//     box-shadow:0px 5px 15px rgba(0,0,0,0.09);
+//    
+//     overflow:hidden;
+//   
+//     li {
+//         padding:12px 20px;
+//         cursor:pointer;
+//         &.active {
+//             font-weight:bold;
+//             color:#fe5f1e;
+//         }
+//          &:hover {
+//                 background:rgba(254,95,30,0.05)
+//             }
           
-        }
-    }
+//         }
+//     }
 
 
 

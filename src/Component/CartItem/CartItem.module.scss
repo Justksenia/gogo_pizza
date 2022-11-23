@@ -33,10 +33,10 @@
 
 .button__count {
     .button__section {
-        color: $orange;
+        // color: $orange;
     }
     .button__clear {
-        color: $black;
+        // color: $black;
     }
     button {
         width:32px;
@@ -58,15 +58,15 @@
         button {
             width: 210px;
             height: 50px;
-            background-color: $orange;
+            // background-color: $orange;
             font-size: 16px;
             border: none;
             border-radius: 30px;
             color: $white;
             &:hover {
                 background-color: $white;
-                color:$orange;
-                border: 2px solid $orange;
+                // color:$orange;
+                // border: 2px solid $orange;
             }
     
         }

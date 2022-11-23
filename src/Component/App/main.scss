@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+    h1 {
+        @apply text-24 font-bold 
+    }
+    h2 {
+        @apply text-24 font-semibold leading-7
+    }
+    h3 {
+        @apply text-20 font-bold 
+    }
+    h4 {
+        @apply text-32 font-bold
+    }
+}
+
+@layer components {
+    .btn {
+        @apply cursor-pointer border-1 px-7 py-4 rounded-30;
+    
+        &__black {
+            @apply bg-black text-white  border-black;
+        }
+        &__grey{
+            @apply bg-lg-grey text-black border-black border-1;
+        }
+        &__orange {
+            @apply bg-orange text-white border-grey
+        }
+    }
+}
+

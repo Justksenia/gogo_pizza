@@ -97,15 +97,15 @@
         height: 40px;
         width:155px;
         background-color: $white;
-       color:$orange;
-       border:2px solid $orange;
+    //    color:$orange;
+    //    border:2px solid $orange;
         &:hover {
-            background-color: $orange;
+            // background-color: $orange;
             color:$white;
         }
         &:active {
             background-color: $white;
-            color:$orange;
+            // color:$orange;
         }
     }
 }

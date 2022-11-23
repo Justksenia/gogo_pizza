@@ -9,7 +9,7 @@ import * as select from "../redux/selectors/selectors";
 import CartItem from "../Component/CartItem/CartItem";
 import CartEmpty from "../Component/CartItem/CartEmpty";
 
-import style from "./Cart.module.scss";
+// import style from "./Cart.module.scss";
 
 
 const Cart = () => {
@@ -32,18 +32,18 @@ const Cart = () => {
   const pizzasCart = Object.keys(items).map((key) => items[key].items[0]);
 
   return (
-    <div className={style.content__cart}>
+    <div className="max-w-screen-md m-auto">
       {totalCount ? (
         <>
-          <div className={style.header}>
-            <div className={style.trash}>
+          <div className="flex items-center justify-between">
+            <div className="trash">
               <i>
                 <img src="img/cart1.svg" alt="cart_logo" />
               </i>
               <h4>Корзина</h4>
             </div>
 
-            <div className={style.clearCart} onClick={onClearCart}>
+            <div className="clearCart" onClick={onClearCart}>
               <img src="img/trash.svg" alt="cart_trash" />
             </div>
           </div>
@@ -64,18 +64,18 @@ const Cart = () => {
               />
             ))}
           </section>
-          <div className={style.totalOrders}>
+          <div className="totalOrders">
             <p>
               Всего пицц: <span>{totalCount} шт</span>
             </p>
             
             <p>
-              Сумма заказа: <span className={style.orange}>{totalPrice} &#8381;</span>
+              Сумма заказа: <span className="orange">{totalPrice} &#8381;</span>
             </p>
             
           </div>
-          <div className={style.buttonSection}>
-              <button className={style.blackButton}>Вернуться назад</button>
+          <div className="buttonSection">
+              <button className="blackButton">Вернуться назад</button>
               <button>Оплатить заказ</button>
             </div>
         </>

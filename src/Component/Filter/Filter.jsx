@@ -4,13 +4,12 @@ import style from "./Filter.module.scss";
 const Filter=({items, onClickItem, category})=>{
     return (
         <div>
-        <nav>
-           
-            <ul className={style.filter}>
-                <li className={category===null?style.active:null} 
+        <nav className="mr-10 px-20 py-15">
+            <ul className="flex content-between cursor-pointer">
+                <li className={category===null?"btn btn__black":"btn btn__grey"} 
                 onClick={()=>onClickItem(null)}>Все</li>
                 {items.map((item,index)=>{
-                    return (<li className={category===index?style.active:null} 
+                    return (<li className={` ${category===index?"btn btn__black":'btn btn__grey'}`} 
                     key={`${index}_${item}`}
                     onClick={()=>onClickItem(index)}
                     >{item}</li>)

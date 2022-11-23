@@ -18,25 +18,12 @@ h2,
 h3,
 h4,
 h5 {
-  color: $black;
+  // color: $black;
 }
 
-h1 {
-  font-size: 24px;
-  font-weight: 800;
-  text-align: left;
-}
 
-h2 {
-  font-weight: 600;
-  font-size: 28px;
-  line-height: 30px;
-}
-h4 {
-  font-weight: 700;
-  font-size: 32px;
-  margin-left: 18px;
-}
+
+
 a {
   text-decoration: none;
 }
@@ -45,7 +32,7 @@ a {
 }
 
 body {
-  background-color: $background;
+  // background-color: $background;
   padding: 20px 20px;
   @media (max-width: 768px) {
     padding: 5px 0;
@@ -74,15 +61,7 @@ body {
   }
 }
 
-.content__navigation {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  @media (max-width: 880px) {
-    flex-direction: column;
-    margin-bottom: 10px;
-  }
-}
+
 .content__section {
   display: flex;
   flex-basis: 23%;
